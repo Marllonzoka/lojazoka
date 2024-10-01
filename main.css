@@ -1,0 +1,229 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+header {
+    background-color: #d09021;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #d06814;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.conteudo {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  #botao {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #botao:hover {
+    background-color: #0056b3;
+  }
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.sobre-a-loja {
+    margin-top: 16px;
+    display: flex;
+}
+
+.sobre-a-loja img {
+    max-width: 300px;
+    margin-right: 24px;
+    height: auto;
+}
+
+section {
+    margin-top: 16px;
+}
+
+.lista {
+    margin-top: 16px ;
+}
+
+.lista ul{
+    display: grid;
+    grid-template-columns: repeat( 4 , 24.5%);
+    column-gap: 1%;
+}
+
+.lista-jogos img {
+    max-width: 100%;
+}
+
+.lista-jogos li {
+    list-style: none;
+}
+
+.preco-original {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.preco-promocao {
+    color: red;
+    font-weight: bold;
+}
+
+.price {
+    margin: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 2px 0;
+    margin-top: 2px;
+    border: none;
+    background-color: #0fac68;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #36e0a4;
+}
+
+@media  screen and ( max-width: 820px) {
+
+    .container {
+        max-width: 90%;
+        display: block;
+    } 
+
+    header > .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-bottom: 16px;
+    }
+
+    .sobre-a-loja {
+        display: flex;
+    }
+
+    .sobre-a-loja img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .menu-hamburguer span{
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .lista ul {
+        display: block;
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and ( min-width: 820px) and ( max-width: 1023px) {
+    .container{
+        max-width: 90%;
+    }
+
+    .sobre-a-loja .container-flex {
+        display: block;
+    }
+
+    .sobre-a-loja img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }   
+
+    .lista .container-flex {
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+}
